@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestService</string>
+    <string name="hello_world">Test service!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn1">TestJni</string>
+    <string name="btn2">Getanypacket</string>
+    <string name="btn3">192.168.0.15</string>
+    <string name="btn4">10.0.20.0</string>
+    <string name="btn5">192.5.20.0</string>
+
+</resources>

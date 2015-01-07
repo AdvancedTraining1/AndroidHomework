@@ -1,0 +1,242 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res/com.example.mengchi.hellocustomui"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.team.customui.MainActivity"
+    android:background="@drawable/jbshape"
+    >
+
+    <!--1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="0.36"
+        android:weightSum="1">
+
+        <com.example.mengchi.hellocustomui.CustomView
+            android:id="@+id/CustomView1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:gravity="top|center_horizontal"
+            android:background="@android:color/holo_orange_light"
+            myview:imageSrc="@drawable/phone"
+            myview:imageAspectRatio="1.0"
+            myview:imageAlpha="0.5"
+            myview:imagePaddingLeft="20dp"
+            myview:imagePaddingTop="5dp"
+            myview:imagePaddingRight="5dp"
+            myview:imagePaddingBottom="5dp"
+            myview:imageScaleType="center"
+            myview:mMessage="phone"
+
+
+            />
+
+        <com.example.mengchi.hellocustomui.CustomView
+            android:id="@+id/CustomView2"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:background="@android:color/holo_green_dark"
+            myview:imageSrc="@drawable/lock"
+            myview:imageAspectRatio="1.0"
+            myview:imageAlpha="0.5"
+            myview:imagePaddingLeft="20dp"
+            myview:imagePaddingTop="5dp"
+            myview:imagePaddingRight="5dp"
+            myview:imagePaddingBottom="5dp"
+            myview:imageScaleType="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="50dp"
+            myview:mMessage="lock"
+
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:layout_weight="0.52"
+        android:layout_marginBottom="20dp"
+        android:background="#ff000079"
+        >
+
+        <com.example.mengchi.hellocustomui.DigitalClock
+            android:id="@+id/TimeView1"
+            android:layout_width="fill_parent"
+            android:layout_height="31dp"
+            android:text="DigitalCloc"
+            android:textSize="25dp"
+            myview:mMessage="date"
+            >
+
+        </com.example.mengchi.hellocustomui.DigitalClock>
+
+        <com.example.mengchi.hellocustomui.DigitalClock
+            android:id="@+id/TimeView2"
+            android:layout_width="fill_parent"
+            android:layout_height="57dp"
+            myview:my_time_type="HH:mm:ss"
+            android:gravity="center"
+            android:textSize="50dp"
+            myview:mMessage="time"
+            >
+
+            </com.example.mengchi.hellocustomui.DigitalClock>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_horizontal"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+
+            >
+            <com.example.mengchi.hellocustomui.CustomView
+                android:id="@+id/myCustomView3"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#ff930093"
+                myview:imageSrc="@drawable/message"
+                myview:imageAspectRatio="1.0"
+                myview:imageAlpha="0.5"
+                myview:imagePaddingLeft="5dp"
+                myview:imagePaddingTop="5dp"
+                myview:imagePaddingRight="5dp"
+                myview:imagePaddingBottom="5dp"
+                myview:imageScaleType="center"
+                myview:mMessage="message"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+
+            >
+            <com.example.mengchi.hellocustomui.CustomView
+                android:id="@+id/myCustomView4"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#ffffd306"
+                myview:imageSrc="@drawable/file"
+                myview:imageAspectRatio="1.0"
+                myview:imageAlpha="0.5"
+                myview:imagePaddingLeft="5dp"
+                myview:imagePaddingTop="5dp"
+                myview:imagePaddingRight="5dp"
+                myview:imagePaddingBottom="5dp"
+                myview:imageScaleType="center"
+                myview:mMessage="file"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--4-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_horizontal"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+
+            >
+            <com.example.mengchi.hellocustomui.CustomView
+                android:id="@+id/myCustomView5"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#ff2e2fff"
+                myview:imageSrc="@drawable/ie"
+                myview:imageAspectRatio="1.0"
+                myview:imageAlpha="0.5"
+                myview:imagePaddingLeft="5dp"
+                myview:imagePaddingTop="5dp"
+                myview:imagePaddingRight="5dp"
+                myview:imagePaddingBottom="5dp"
+                myview:imageScaleType="center"
+                myview:mMessage="ie"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:layout_gravity="center"
+
+            >
+
+            <view
+
+                class="com.example.mengchi.hellocustomui.CustomView"
+                android:id="@+id/view"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#ffff0000"
+                myview:imageSrc="@drawable/song"
+                myview:imageAspectRatio="1.0"
+                myview:imageAlpha="0.5"
+                myview:imagePaddingLeft="5dp"
+                myview:imagePaddingTop="5dp"
+                myview:imagePaddingRight="5dp"
+                myview:imagePaddingBottom="5dp"
+                myview:imageScaleType="center"
+                myview:mMessage="music"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
